@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+
+<!--
+HELLO TRAVELER!
+ Please don't directly copy my code! 
+ If you want to use it, please edit it to your needs and credit me on your page/website.
+ You can take reference, play around with it or take inspiration from it. But please credit me :)
+ Just be respectful! And thanks you for liking my website's code :) 
+ - Yokiie, owner of https://unicodeangel.neocities.org
+
+ 〃∩   ∧＿＿∧ 　　 
+ ⊂⌒（ 　・ω・）　 
+ 　 ｀ヽ_っ＿/￣￣￣￣/ 　 
+ 　 　 　 ＼/       /　 
+ 　　　　　　￣￣￣￣  
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✩ b o o s y s p a c e ✩ </title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="icon" type="image/x-icon" href="imgs/favicon.ico">
+    <script src="scripts/onLoad.js" defer></script>
+    <script src="scripts/switchPage.js" defer></script>
+</head>
+
+<body>
+
+    <div class="row">
+        <div class="column left">
+
+            <!-- ----- START NAVIGATION WINDOW ----- -->
+            <div class="navbar">
+                <img src="imgs/loadercircle.png" id="loadercircle">
+                <div class="navbar-title">nAVI</div>
+                <div class="navbar-title-2">boo<text>sy0</text></div>
+                <table id="navtable" style="overflow:auto; width:100%; background:transparent;">
+                    <tr>
+                        <td id="navhover"><a href="index.html">HOME</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="navhover"><a href="info.html">INFO</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="navhover"><a href="blog\index.html">BLOG</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="navhover"><a href="links.html">LINKS</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="navhover"><a href="cache.html">CACHE</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="navhover"><a href="#"><!-- Empty --></a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!-- ----- END NAVIGATION WINDOW ----- -->
+
+            <div id="vidbutton">
+
+                <!-- Use a button to pause/play the video with JavaScript -->
+                <button id="vidBtn" onclick="PlayPauseVideo()">TURN OFF</button>
+                <p>moving background</p>
+
+            </div>
+
+            <!-- ----- START OF MOOD WINDOW ----- -->
+            <div class="small-content-mood">
+                <div class="small-content-toolbar">
+                    <span data-text="toolbar text">MOOD</span>
+                    <img src="imgs/xbutton.png" id="small-xbutton-left">
+                </div>
+
+                <div class="small-content-inner"
+                    style="height: 30px; padding-left:0px; padding-right:0px; padding-bottom:0px; padding-bottom:0px; margin-top:40px;">
+                    <span style="top:-22px; left:10px; font-family: 'Aldrich', sans-serif;">
+                        feeling </br>
+                    </span>
+                    <span>
+                        <a href="https://www.imood.com/users/yokiie"><img id="imood"
+                                src="https://moods.imood.com/display/uname-yokiie/fg-89929c/bg-fafafb/imood.gif"
+                                alt="The current mood of yokiie at www.imood.com"></a>
+                    </span>
+                </div>
+
+                <div class="small-content-inner">
+                    <span style="top:-22px; left:-10px; font-family: 'Aldrich', sans-serif;">
+                        status </br>
+                    </span>
+
+                    <span class="status-text">
+                        <div id="statuscafe" class="fade-in">
+                            <div id="statuscafe-username"></div>
+                            <div id="statuscafe-content"></div>
+                            <div id="statuscafe-date"></div>
+                        </div>
+                        <script src="scripts/status.js?name=yokiie" defer></script>
+                    </span>
+                </div>
+            </div>
+            <!-- ----- END OF MOOD WINDOW ----- -->
+
+            <!-- ----- START OF BUTTON WINDOW ----- -->
+            <div class="small-content-button">
+                <div class="small-content-toolbar">
+                    <span data-text="toolbar text">BUTTON</span>
+                    <img src="imgs/xbutton.png" id="small-xbutton-left">
+                </div>
+
+                <div class="small-content-inner"
+                    style="height: 30px; padding-left:0px; padding-right:0px; padding-bottom:0px; margin-top:40px;">
+                    <span style="top:-22px; left:10px; font-family: 'Aldrich', sans-serif;">
+                        images <a href="#" id="nextButton" onclick="showNextPage();">  next button ></a>
+                    </span>
+
+                    <span style="height:31px; display:block;" id="button1">
+                        <img src="imgs/UnicodeAngelButton.gif" style="margin-left:35px; margin-top:-7px; opacity:0.7">
+                    </span>
+
+                    <span style="height:31px; display:none;" id="button2">
+                        <img src="imgs/UnicodeAngelButton2.gif" style="margin-left:35px; margin-top:-7px; opacity:0.7;">
+                    </span>
+                    <span style="height:31px; display:none;" id="button3">
+                        <img src="imgs/UnicodeAngelButton3.gif" style="margin-left:35px; margin-top:-7px; opacity:0.8;">
+                    </span>
+                </div>
+
+                <div class="small-content-inner" style="padding:3px; margin-top:45px; height:60px !important;">
+                    <span style="top:-35px; left:7px; font-family: 'Aldrich', sans-serif;">
+                        code (hotlinking encouraged)
+                    </span>
+                    <textarea id="button1TextArea" class="noscrollbar" style="display:block;"> &lt;a href="https://unicodeangel.neocities.org" target="_blank"&gt;&lt;img src="https://unicodeangel.neocities.org/imgs/UnicodeAngelButton.gif"&gt;&lt;/a&gt;</textarea>
+                    <textarea id="button2TextArea" class="noscrollbar" style="display:none;"> &lt;a href="https://unicodeangel.neocities.org" target="_blank"&gt;&lt;img src="https://unicodeangel.neocities.org/imgs/UnicodeAngelButton2.gif"&gt;&lt;/a&gt;</textarea>
+                    <textarea id="button3TextArea" class="noscrollbar" style="display:none;"> &lt;a href="https://unicodeangel.neocities.org" target="_blank"&gt;&lt;img src="https://unicodeangel.neocities.org/imgs/UnicodeAngelButton3.gif"&gt;&lt;/a&gt;</textarea>
+                </div>
+            </div>
+            <!-- ----- END OF BUTTON WINDOW ----- -->
+        </div>
+
+        <div class="column middle">
+            <!-- ----- START OF MAINCONTENT ----- -->
+            <div class="content">
+                <div class="content-toolbar">
+                    <span data-text="welcome">welcome</span>
+                    
+                    <img src="imgs/xbutton.png" id="xbutton">
+                </div>
+
+                <div class="content-inner">
+                    <div id="page1" class="fade-in" style="display:block;">
+                        
+                        <h1>Onde estou ?</h1>
+                        <span>
+                            Bem vind@ ao meu espaço digital! Aqui vou compartilhas meus pensamentos, ideias e coisas legais que encontro pela internet
+                            desde conteúdos digitais, cursos interessantes ou links de produtos que compro/tenho interesse de comprar. 
+                            Esse site esta sendo feito com o propósito de ser um blog pessoal sem algum foco especifico, 
+                            apenas pra postar o que eu gosto e quero. sinta-se a vontade de me acompanhar por aqui caso seus interesses se alinhem com os meus.</br>
+                        </span>
+                        <span class="blink_text" style="color: #93bdec;">
+                            Este site foi projetado para visualização em computador, por isso esta sujeito a problemas no mobile. <br>
+                            Ainda está em construção, obrigada pela paciência.
+                        </span>
+
+                        <h1 style="margin-top:-10px;">O que tem aqui ? <img src="imgs/CatAsciiArt_ByYokiie.gif"
+                                style="mix-blend-mode: normal; opacity: 0.5; display:inline; margin-left:90px;"></h1>
+                        <span>
+                            Por aqui você vai encontrar posts e conteúdos sobre estudos, sites com elementos gráficos 
+                            pra criação de sites e outras coisas que eu tenho interesse em salvar além de links de coisas que eu compro e recomendo! </br>
+                            </br>
+
+                        </span>
+
+
+                        <h1 style="margin-top:-10px;">Why Unicode Angel ? <img src="imgs/AsciiCatSleeping_By_Yokiie.gif"
+                                style="mix-blend-mode: normal; opacity: 0.5; display:inline; margin-left:90px;"></h1>
+                        <span>
+                            Unicode is a protocol meant to unify the world's writing systems. It's a protocol for the
+                            internet, for the digital world. It's a protocol for all of us, for all of our digital
+                            selves. Unicode angels are guardians of the digital communication realm.
+
+                        </span>
+                    </div>
+                </div>
+                <div class="content-footer"><span id="factDisplay"></span></div>
+            </div>
+            <!-- ----- END OF MAIN CONTENT ----- -->
+
+            <div id="middle-column-img">
+                <img src="imgs/dotloader.gif" style="mix-blend-mode: normal; width:500px; opacity: 0.3;">
+            </div>
+        </div>
+
+        <div class="column right">
+            <!-- ----- START OF UPDATE WINDOW ----- -->
+            <div class="small-content-updates"
+                style="position: relative; top: 0px; left: 0px; width: 285px; height: auto;">
+                <div class="small-content-toolbar">
+                    <span data-text="toolbar text">UPDATES</span>
+                    <img src="imgs/xbutton.png" id="small-xbutton-right">
+                </div>
+
+                <div id="small-content-pictochat">
+                    <iframe src="pictochat.html"
+                        style="top:0px; left:-20px; position:relative; height:400px; width:400px; border:0px; z-index: 100;"></iframe>
+                </div>
+            </div>
+            <!-- ----- END OF UPDATE WINDOW ----- -->
+
+            <!-- ----- START OF TO-DO WINDOW ----- -->
+            <!-- Idea : when i'm done building the website, i'll replace this todo list by a "recent blog posts" list -->
+            <div class="small-content-updates"
+                style="position: relative; top: 15px; left: 0px; width: 285px; height: auto; margin-bottom: 25px;">
+                <div class="small-content-toolbar">
+                    <span data-text="toolbar text">TO-DO</span>
+                    <img src="imgs/xbutton.png" id="small-xbutton-right">
+                </div>
+
+                <div id="small-content-todo" class="fade-in">
+                    <span>
+                        <ul>
+                            <li>Terminar meu site</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
+            <!-- ----- END OF TO-DO WINDOW ----- -->
+
+            <!-- ----- START OF STATS WINDOW ----- -->
+            <div class="small-content-stats">
+                <div class="small-content-toolbar">
+                    <span data-text="toolbar text">STATS</span>
+                    <img src="imgs/xbutton.png" id="small-xbutton-left">
+                </div>
+
+                <div class="small-content-inner"
+                    style="height: 30px; padding-left:0px; padding-right:0px; padding-bottom:0px; margin-top:40px;">
+                    <span style="top:-22px; left:10px; font-family: 'Aldrich', sans-serif;">
+                        your digital ID number</br>
+                    </span>
+                    <span
+                        style="height:25px; margin-left:auto; margin-right:auto; margin-top:-8px; margin-bottom:5px;text-align: center;">
+                        <!-- FC2 Counter  Starts here -->
+                        <script language="javascript" type="text/javascript"
+                            src="//counter1.fc2.com/counter.php?id=89508642"></script><noscript><img
+                                src="//counter1.fc2.com/counter_img.php?id=89508642" /></noscript>
+                        <!-- FC2 Counter  Ends here -->
+                    </span>
+                </div>
+
+                <div class="small-content-inner" style="padding:3px; margin-top:35px; height:58px !important;">
+                    <span style="top:-25px; left:7px; font-family: 'Aldrich', sans-serif;">
+                        timecode infos
+                    </span>
+                    <span id="timecode">
+                        <table>
+                            <tr>
+                                <td style="text-align: left;">Created on :</td>
+                                <td style="text-align: right;">31.07.2024</td>
+                            </tr>
+                            <tr>
+                                 <td style="text-align: left;">Last updated :</td>
+                                <td style="text-align: right;">30.11.2024</td>
+                            </tr>
+                        </table>
+                    </span>
+                </div>
+            </div>
+            <!-- ----- END OF STATS WINDOW ----- -->
+
+             
+
+        </div>
+    </div>
+
+    <!-- The video -->
+    <div id="bgVideoContainer">
+        <video autoplay muted loop id="bgVideo" style="pointer-events: none">
+            <source src="imgs/background.mp4" type="video/mp4" style="pointer-events: none">
+        </video>
+
+    </div>
+</body>
+
+</html>
