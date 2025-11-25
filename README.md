@@ -1,3 +1,3 @@
 # boosyspace
- my virtual space to post/save anything i want
+ a virtual space to post/save anything i want
 
